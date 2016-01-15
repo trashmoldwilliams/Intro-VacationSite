@@ -17,3 +17,7 @@
 #error-result {
   display: none;
 }
+
+img {
+  width: 50%;
+}
