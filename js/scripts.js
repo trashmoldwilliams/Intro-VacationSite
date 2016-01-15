@@ -7,20 +7,50 @@ $(function() {
     var answer3 = $("input[name=question3]:checked", "#vacation-quiz").val();
     var answer4 = $("input[name=question4]:checked", "#vacation-quiz").val();
     var answer5 = $("input[name=question5]:checked", "#vacation-quiz").val();
-    var alaska_score;
-    var hawaii_score;
-    var vegas_score;
+    var alaska_score = 0;
+    var hawaii_score = 0;
+    var vegas_score = 0;
 
     //Test Scoring Calculator
-    for (answer-value === 1; answer-value < 6; answer-value ++) {
-      if (answer[answer-value] === "vegas") {
+      if (answer1 === "vegas") {
         vegas_score += 1;
-      }else if (answer[answer-value] === "hawaii") {
+      }else if (answer1 === "hawaii") {
         hawaii_score += 1;
-      }else if (answer[answer-value] === "alaska") {
+      }else if (answer1 === "alaska") {
         alaska_score += 1;
       }
-    }
+
+      if (answer2 === "vegas") {
+        vegas_score += 1;
+      }else if (answer2 === "hawaii") {
+        hawaii_score += 1;
+      }else if (answer2 === "alaska") {
+        alaska_score += 1;
+      }
+
+      if (answer3 === "vegas") {
+        vegas_score += 1;
+      }else if (answer3 === "hawaii") {
+        hawaii_score += 1;
+      }else if (answer3 === "alaska") {
+        alaska_score += 1;
+      }
+
+      if (answer4 === "vegas") {
+        vegas_score += 1;
+      }else if (answer4 === "hawaii") {
+        hawaii_score += 1;
+      }else if (answer4 === "alaska") {
+        alaska_score += 1;
+      }
+
+      if (answer5 === "vegas") {
+        vegas_score += 1;
+      }else if (answer5 === "hawaii") {
+        hawaii_score += 1;
+      }else if (answer5 === "alaska") {
+        alaska_score += 1;
+      }
 
     //Determine Test Result
     if (alaska_score > hawaii_score && alaska_score > vegas_score) {
@@ -33,10 +63,10 @@ $(function() {
       $("#vegasresult").show();
 
     //Tie-Breakers
-  }else if (vegas_score === hawaii_score && vegas_score > alaska_score && hawaii_score > alaska_score) {
-      $("#tie-result").show();
-      $("#vegas-result").show();
-      $("#hawaii-result").show();
+    }else if (vegas_score === hawaii_score && vegas_score > alaska_score && hawaii_score > alaska_score) {
+        $("#tie-result").show();
+        $("#vegas-result").show();
+        $("#hawaii-result").show();
 
     }else if (vegas_score === alaska_score && vegas_score > hawaii_score && alaska_score > hawaii_score) {
       $("#tie-result").show();
