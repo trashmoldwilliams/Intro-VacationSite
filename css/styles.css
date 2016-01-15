@@ -29,3 +29,7 @@ img {
 body {
   background-color: #ffffcc;
 }
+
+.container h1{
+  text-align: center;
+}

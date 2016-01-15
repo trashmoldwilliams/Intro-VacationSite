@@ -8,142 +8,145 @@
     <title>Vacation Planner</title>
   </head>
   <body>
+    <div class="container">
+      <!--Header & Intro-->
+      <div class="jumbotron">
+      <h1>Vacation Planner</h1>
+      </div>
 
-    <!--Header & Intro-->
-    <h1>Vacation Planner</h1>
+      <!--Questions-->
+      <div id="quiz-block">
+        <p> Take this short quiz to find out where exactly you should go on vacation!</p>
+        <form id="vacation-quiz">
+          <h4>1. What climate do you prefer?</h4>
+          <div class="radio">
+            <label>
+              <input type="radio" name="question1" value="vegas" checked>Desert
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="question1"  value="hawaii">Tropical
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="question1" value="alaska">Tundra
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="question1">Don't care
+            </label>
+          </div>
+          <h4>2. What do you value most?</h4>
+          <div class="radio">
+            <label>
+              <input type="radio" name="question2" value="hawaii" checked>Beaches
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="question2" value="alaska">Wilderness
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="question2"  value="vegas">Cities
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="question2">Don't care
+            </label>
+          </div>
+          <h4>3. Do you want...?</h4>
+          <div class="radio">
+            <label>
+              <input type="radio" name="question3" checked value="alaska">Adventure
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="question3"  value="vegas">Night life
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" value="hawaii" name="question3">Leisure
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="question3">Don't care
+            </label>
+          </div>
+          <h4>4. How much would you go outside of your comfort zone?</h4>
+          <div class="radio">
+            <label>
+              <input type="radio" name="question4" value="hawaii" checked>Not at all
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="question4" value="vegas">A little
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="question4" value="alaska">A lot
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="question4">Don't care
+            </label>
+          </div>
+          <h4>5. What kind of environment do you like?</h4>
+          <div class="radio">
+            <label>
+              <input type="radio" name="question5" value="hawaii" checked>Slow and calm
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="question5" value="alaska">Quiet and serene
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="question5"  value="vegas">Loud and fast paced
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="question5">Don't care
+            </label>
+          </div>
+          <input type="submit" value="See results!">
+        </form>
+      </div>
 
-    <!--Questions-->
-    <div id="quiz-block">
-      <p> Take this short quiz to find out where exactly you should go on vacation!</p>
-      <form id="vacation-quiz">
-        <h4>1. What climate do you prefer?</h4>
-        <div class="radio">
-          <label>
-            <input type="radio" name="question1" value="vegas" checked>Desert
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="question1"  value="hawaii">Tropical
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="question1" value="alaska">Tundra
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="question1">Don't care
-          </label>
-        </div>
-        <h4>2. What do you value most?</h4>
-        <div class="radio">
-          <label>
-            <input type="radio" name="question2" value="hawaii" checked>Beaches
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="question2" value="alaska">Wilderness
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="question2"  value="vegas">Cities
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="question2">Don't care
-          </label>
-        </div>
-        <h4>3. Do you want...?</h4>
-        <div class="radio">
-          <label>
-            <input type="radio" name="question3" checked value="alaska">Adventure
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="question3"  value="vegas">Night life
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" value="hawaii" name="question3">Leisure
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="question3">Don't care
-          </label>
-        </div>
-        <h4>4. How much would you go outside of your comfort zone?</h4>
-        <div class="radio">
-          <label>
-            <input type="radio" name="question4" value="hawaii" checked>Not at all
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="question4" value="vegas">A little
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="question4" value="alaska">A lot
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="question4">Don't care
-          </label>
-        </div>
-        <h4>5. What kind of environment do you like?</h4>
-        <div class="radio">
-          <label>
-            <input type="radio" name="question5" value="hawaii" checked>Slow and calm
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="question5" value="alaska">Quiet and serene
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="question5"  value="vegas">Loud and fast paced
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="question5">Don't care
-          </label>
-        </div>
-        <input type="submit" value="See results!">
-      </form>
+      <!--Test Results-->
+      <div id="tie-result">
+        <h4>It seems like these destinations would make a good vacation for you!</h4>
+      </div>
+      <div id="alaska-result">
+        <h4>Anchorage, Alaska</h4>
+        <img src="img/alaska.jpg">
+      </div>
+      <div id="hawaii-result">
+        <h4>Maui, Hawaii</h4>
+        <img src="img/hawaii.jpg">
+      </div>
+      <div id="vegas-result">
+        <h4>Las Vegas, Nevada</h4>
+        <img src="img/vegas.jpg">
+      </div>
+      <div id="error-result">
+        <h4>There seems to have been an error with the quiz! Please try again, and if possible <a href="mailto:bugfix@example.com?Subject=Error" target="_top">tell us what happened.</a> We apologize for the inconvenience.</h4>
+      </div>
+      <button id="reset" class="btn btn-primary">Take again!</button>
     </div>
-
-    <!--Test Results-->
-    <div id="tie-result">
-      <h4>It seems like these destinations would make a good vacation for you!</h4>
-    </div>
-    <div id="alaska-result">
-      <h4>Anchorage, Alaska</h4>
-      <img src="img/alaska.jpg">
-    </div>
-    <div id="hawaii-result">
-      <h4>Maui, Hawaii</h4>
-      <img src="img/hawaii.jpg">
-    </div>
-    <div id="vegas-result">
-      <h4>Las Vegas, Nevada</h4>
-      <img src="img/vegas.jpg">
-    </div>
-    <div id="error-result">
-      <h4>There seems to have been an error with the quiz! Please try again, and if possible <a href="mailto:bugfix@example.com?Subject=Error" target="_top">tell us what happened.</a> We apologize for the inconvenience.</h4>
-    </div>
-    <button id="reset" class="btn btn-primary">Take again!</button>
   </body>
 </html>
