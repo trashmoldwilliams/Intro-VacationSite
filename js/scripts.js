@@ -11,7 +11,7 @@ $(function() {
     var hawaii-score;
     var vegas-score;
 
-    //Output Conditions
+    //Test Result Calculator
     if (alaska-score > hawaii-score && alaska-score > vegas-score) {
       $("#alaska-result").show();
 
@@ -39,7 +39,7 @@ $(function() {
     }else {
       $("error-result").show();
     }
-    
+
     event.preventDefault();
   });
 });
