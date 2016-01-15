@@ -81,9 +81,21 @@ $(function() {
       $("error-result").show();
     }
 
-    //Toggle quiz/results view
+    //Hide quiz upon submit
     $("#quiz-block").hide();
+    $("#reset").show();
 
     event.preventDefault();
+  });
+
+  //Reset quiz
+  $("button#reset").click(function() {
+    $("#quiz-block").show();
+    $("#reset").hide();
+    $("#tie-result").hide();
+    $("#alaska-result").hide();
+    $("#hawaii-result").hide();
+    $("#vegas-result").hide();
+    $("#error-result").hide();
   });
 });
