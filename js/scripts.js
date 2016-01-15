@@ -82,7 +82,7 @@ $(function() {
     }
 
     //Toggle quiz/results view
-    $("vacation-quiz").hide();
+    $("#quiz-block").hide();
 
     event.preventDefault();
   });
