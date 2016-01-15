@@ -77,6 +77,13 @@ $(function() {
       $("#tie-result").show();
       $("#alaska-result").show();
       $("#hawaii-result").show();
+
+    }else if (alaska_score === vegas_score === hawaii_score) {
+      $("tie-result").show();
+      $("#alaska-result").show();
+      $("#hawaii-result").show();
+      $("#vegas-result").show();
+
     }else {
       $("error-result").show();
     }
