@@ -11,7 +11,18 @@ $(function() {
     var hawaii-score;
     var vegas-score;
 
-    //Test Result Calculator
+    //Test Scoring Calculator
+    for (answer-value = 1; answer-value < 6; answer-value ++) {
+      if (answer[answer-value] === "vegas") {
+        vegas-score += 1;
+      }else if (answer[answer-value] === "hawaii") {
+        hawaii-score += 1;
+      }else if (answer[answer-value] === "alaska") {
+        alaska-score += 1;
+      }
+    }
+
+    //Determine Test Result
     if (alaska-score > hawaii-score && alaska-score > vegas-score) {
       $("#alaska-result").show();
 
