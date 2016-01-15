@@ -12,45 +12,45 @@ $(function() {
     var vegas_score = 0;
 
     //Test Scoring Calculator
-      if (answer1 === "vegas") {
-        vegas_score += 1;
-      }else if (answer1 === "hawaii") {
-        hawaii_score += 1;
-      }else if (answer1 === "alaska") {
-        alaska_score += 1;
-      }
+    if (answer1 === "vegas") {
+      vegas_score += 1;
+    }else if (answer1 === "hawaii") {
+      hawaii_score += 1;
+    }else if (answer1 === "alaska") {
+      alaska_score += 1;
+    }
 
-      if (answer2 === "vegas") {
-        vegas_score += 1;
-      }else if (answer2 === "hawaii") {
-        hawaii_score += 1;
-      }else if (answer2 === "alaska") {
-        alaska_score += 1;
-      }
+    if (answer2 === "vegas") {
+      vegas_score += 1;
+    }else if (answer2 === "hawaii") {
+      hawaii_score += 1;
+    }else if (answer2 === "alaska") {
+      alaska_score += 1;
+    }
 
-      if (answer3 === "vegas") {
-        vegas_score += 1;
-      }else if (answer3 === "hawaii") {
-        hawaii_score += 1;
-      }else if (answer3 === "alaska") {
-        alaska_score += 1;
-      }
+    if (answer3 === "vegas") {
+      vegas_score += 1;
+    }else if (answer3 === "hawaii") {
+      hawaii_score += 1;
+    }else if (answer3 === "alaska") {
+      alaska_score += 1;
+    }
 
-      if (answer4 === "vegas") {
-        vegas_score += 1;
-      }else if (answer4 === "hawaii") {
-        hawaii_score += 1;
-      }else if (answer4 === "alaska") {
-        alaska_score += 1;
-      }
+    if (answer4 === "vegas") {
+      vegas_score += 1;
+    }else if (answer4 === "hawaii") {
+      hawaii_score += 1;
+    }else if (answer4 === "alaska") {
+      alaska_score += 1;
+    }
 
-      if (answer5 === "vegas") {
-        vegas_score += 1;
-      }else if (answer5 === "hawaii") {
-        hawaii_score += 1;
-      }else if (answer5 === "alaska") {
-        alaska_score += 1;
-      }
+    if (answer5 === "vegas") {
+      vegas_score += 1;
+    }else if (answer5 === "hawaii") {
+      hawaii_score += 1;
+    }else if (answer5 === "alaska") {
+      alaska_score += 1;
+    }
 
     //Determine Test Result
     if (alaska_score > hawaii_score && alaska_score > vegas_score) {
@@ -60,7 +60,7 @@ $(function() {
       $("#hawaii-result").show();
 
     }else if (vegas_score > alaska_score && vegas_score > hawaii_score) {
-      $("#vegasresult").show();
+      $("#vegas-result").show();
 
     //Tie-Breakers
     }else if (vegas_score === hawaii_score && vegas_score > alaska_score && hawaii_score > alaska_score) {
@@ -78,14 +78,14 @@ $(function() {
       $("#alaska-result").show();
       $("#hawaii-result").show();
 
-    }else if (alaska_score === vegas_score === hawaii_score) {
-      $("tie-result").show();
+    }else if (alaska_score === vegas_score && vegas_score === hawaii_score && hawaii_score === alaska_score) {
+      $("#tie-result").show();
       $("#alaska-result").show();
       $("#hawaii-result").show();
       $("#vegas-result").show();
 
     }else {
-      $("error-result").show();
+      $("#error-result").show();
     }
 
     //Hide quiz upon submit
