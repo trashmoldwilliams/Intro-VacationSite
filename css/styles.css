@@ -23,13 +23,20 @@
 }
 
 img {
-  width: 50%;
+  width: 100%;
+  border-radius: 10px;
 }
 
 body {
   background-color: #ffffcc;
 }
 
-.container h1{
+button {
+  margin: 10px;
+}
+
+.jumbotron {
+  background-color: #ffcccc;
+  margin: 10px;
   text-align: center;
 }
