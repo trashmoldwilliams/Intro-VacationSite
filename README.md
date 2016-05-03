@@ -1,18 +1,25 @@
-#Vacation Planner
+# Vacation Site
 
-Vacation Planner is a site that gives the user a quiz, and suggests a vacation destination to them based on their answers.
+#### By Will Johnson
 
-It narrows down from three locations, a user with less preferences will be given a broader range while a user with more preferences will be given a specific location.
+## Description
 
-###Instructions
-To access this site, go to: https://trashmoldwilliams.github.io/vacation-site
+An intro to programming test, asking the developer to create a multiple choice quiz that outputs a vacation destination based on the scoring logic for each question.
 
-If you want to access the project folder, type "git clone https://github.com/trashmoldwilliams/vacation-site.git" into a terminal running Git Bash.
+## Setup/Installation Requirements
 
-Languages Used
-* HTML
-* CSS (with Bootstrap)
-* Javascript (with jQuery)
-* & coded in Atom
+* Clone project
+* open index.html
 
-(c) Will Johnson 2016
+## Technologies Used
+
+* Javascript/JQuery
+
+## Contact
+You can contact me at trashmoldwilliams@gmail.com
+
+### License
+
+*This software is licensed under the MIT license.*
+
+Copyright (c) 2016 Will Johnson
